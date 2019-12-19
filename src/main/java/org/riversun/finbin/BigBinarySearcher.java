@@ -24,6 +24,7 @@
 package org.riversun.finbin;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -170,7 +171,7 @@ public class BigBinarySearcher extends BinarySearcher {
 		}
 
 		// Sort in ascending order
-		resultIndexList.sort(new Comparator<Integer>() {
+		Collections.sort(resultIndexList, new Comparator<Integer>() {
 
 			public int compare(Integer num1, Integer num2) {
 				if (num1 > num2) {
